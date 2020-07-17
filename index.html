@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/622c7a6f7a.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <style>
+    @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+        background-color: #cabbe9;
+        /* border: 1px solid green; */
+    }
+   .container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        min-height: 100vh;
+        max-width: 500px;
+        margin: 0 auto;
+        background-color: whitesmoke
+    }
+    .top-header{
+        height: 150px;
+        background-color: #9c1de7;
+        width: 100%;
+        border-radius: 0 0 40px 40px;
+        display: flex;
+        flex-direction: column;
+    }
+    .input-font-wrap{
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        background-color: #fff;
+        background-color: #9c1de7;
+        position: relative;
+        margin: auto 0;
+    }
+    input{
+        width: 40%;
+        border: none;
+        border-radius: 8px 0 0 8px;
+    }
+    input:focus{
+        outline: none;
+    }
+    .todo-section{
+        margin-top: 20px;
+    }
+    .todo-wrapper{
+        background-color: whitesmoke;
+    }
+    .todo-section{
+        width: 80%;
+        text-align: center;
+    }
+    li{
+        list-style: none;
+        height: 80%;
+    }
+    .list-items{
+        margin-bottom: 10px;
+        border-right: 4px solid #9c1de7;
+        border-left: 4px solid #9c1de7;
+        /* border-radius: 8px; */
+        height: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .list-items:last-child{
+        margin-bottom: 0;
+    }
+    .icons{
+        display: flex;
+        justify-content: flex-end;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top-header">
+            <div class="input-font-wrap">
+                <input type="text"><i class="fas fa-plus-square" style="font-size: 48px; display: flex;align-items: center; margin: auto 0 ;height: 100%; border-radius: 0 8px 8px 0; padding-left:4px; color: #9c1de7;"></i>
+                
+            </div>
+        </div>
+        <div class="todo-section">
+            <ul class="todo-wrapper">
+                <div class="list-items">
+                    <li class="todo-items">To do 1</li>
+                    <div class="icons">
+                        <i class="fas fa-check-square" style="margin-right: 2px; color: #9c1de7;padding-bottom: 2px"></i><i class="far fa-trash-alt"style="margin-right: 2px; color: #9c1de7;padding-bottom: 2px" ></i><i class="far fa-edit" style="margin-right: 2px; color: #9c1de7; padding-bottom: 2px;"></i>
+                    </div>
+                </div>
+                <div class="list-items">
+                    <li class="todo-items">To do 1</li>
+                    <div class="icons">
+                        <i class="fas fa-check-square" style="margin-right: 2px; color: #9c1de7;padding-bottom: 2px"></i><i class="far fa-trash-alt"style="margin-right: 2px; color: #9c1de7;padding-bottom: 2px" ></i><i class="far fa-edit" style="margin-right: 2px; color: #9c1de7; padding-bottom: 2px;"></i>
+                    </div>
+                </div>
+                <div class="list-items">
+                    <li class="todo-items">To do 1</li>
+                    <div class="icons">
+                        <i class="fas fa-check-square" style="margin-right: 2px; color: #9c1de7;padding-bottom: 2px"></i><i class="far fa-trash-alt"style="margin-right: 2px; color: #9c1de7;padding-bottom: 2px" ></i><i class="far fa-edit" style="margin-right: 2px; color: #9c1de7; padding-bottom: 2px;"></i>
+                    </div>
+                </div>
+                <div class="list-items">
+                    <li class="todo-items">To do 1</li>
+                    <div class="icons">
+                        <i class="fas fa-check-square" style="margin-right: 2px; color: #9c1de7;padding-bottom: 2px"></i><i class="far fa-trash-alt"style="margin-right: 2px; color: #9c1de7;padding-bottom: 2px" ></i><i class="far fa-edit" style="margin-right: 2px; color: #9c1de7; padding-bottom: 2px;"></i>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
