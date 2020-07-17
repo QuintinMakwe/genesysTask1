@@ -4,21 +4,20 @@
         margin: 0;
         box-sizing: border-box;
         font-family: "Poppins", sans-serif;
-        background-color: #cabbe9;
-        /* border: 1px solid green; */
+        background-color: #f8f8f8;
     }
    .container{
         display: flex;
         align-items: center;
         flex-direction: column;
         min-height: 100vh;
-        max-width: 500px;
+        max-width: 650px;
         margin: 0 auto;
         background-color: whitesmoke
     }
     .top-header{
         height: 150px;
-        background-color: #9c1de7;
+        background-color: #351ada;
         width: 100%;
         border-radius: 0 0 40px 40px;
         display: flex;
@@ -28,13 +27,12 @@
         height: 40px;
         display: flex;
         justify-content: center;
-        background-color: #fff;
-        background-color: #9c1de7;
+        background-color: #351ada;
         position: relative;
         margin: auto 0;
     }
     .top-header input{
-        width: 40%;
+        width: 50%;
         border: none;
         border-radius: 8px 0 0 8px;
         text-align: center;
@@ -49,6 +47,9 @@
         text-align: center;
         border: none;
     }
+    .todo-items{
+        font-size: 1.16em;
+    }
     .todo-wrapper{
         background-color: whitesmoke;
     }
@@ -60,14 +61,17 @@
     }
     .list-items{
         margin-bottom: 10px;
-        border-right: 4px solid #9c1de7;
-        border-left: 4px solid #9c1de7;
         word-wrap: break-word;
-        /* border-radius: 8px; */
-        height: 70px;
+        border-left: 5px solid #200ca1;
+        border-right: 5px solid #200ca1;
+        border-radius: 6px;
+        height: 120px;
         display: flex;
         flex-direction: column;
+        font-size: 1.12em;
+        padding-top: 20px;
         justify-content: space-between;
+
     }
     .list-items:last-child{     
         margin-bottom: 0;
@@ -76,6 +80,23 @@
         display: flex;
         justify-content: center;
     }
+    .submit-button{
+        font-size: 48px;
+        display: flex;
+        align-items: center; 
+        margin: auto 0 ;
+        height: 100%;
+        border-radius: 0 8px 8px 0;
+        padding-left:4px;
+        color: #200ca1;
+    }
     .strike-through{
         text-decoration: line-through;
+    }
+
+    .icon-style{
+        margin-right: 15px;
+        color: #200ca1;
+        font-size: 20px;
+        padding-bottom: 15px;
     }

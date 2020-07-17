@@ -15,7 +15,7 @@ function addTodo(e){
 
             //add the icon, I couldn't find a good way to do this
             divItem.innerHTML +=`<div class="icons">
-                        <i class="fas fa-check-square check" onclick="clearTodo(event)" style="margin-right: 2px; color: #9c1de7;padding-bottom: 2px"></i><i class="far fa-trash-alt delete" onclick="deleteTodo(event)" style="margin-right: 2px; color: #9c1de7;padding-bottom: 2px" ></i><i class="far fa-edit edit" onclick="editTodo(event)" style="margin-right: 2px; color: #9c1de7; padding-bottom: 2px;"></i>
+                        <i class="fas fa-check-square check icon-style" onclick="clearTodo(event)" ></i><i class="far fa-trash-alt delete icon-style" onclick="deleteTodo(event)"></i><i class="far fa-edit edit icon-style" onclick="editTodo(event)"></i>
                     </div>`
 
             //append created list item to the unordered list 
